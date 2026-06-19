@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Audit Tracking Framework</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+
+    <a class="navbar-brand" href="/dashboard">
+        Audit Tracking Framework
+    </a>
+
+    <div>
+        <a href="/dashboard" class="btn btn-outline-light me-2">
+            Dashboard
+        </a>
+
+        <a href="/employees-ui" class="btn btn-outline-light me-2">
+            Employees
+        </a>
+
+        <a href="/audit-ui" class="btn btn-outline-light">
+            Audit Logs
+        </a>
+    </div>
+
+</div>
+
+
+</nav>
+
+<div class="container mt-4">
+
+
+<div class="p-5 bg-light rounded shadow-sm mb-4">
+    <h1>Audit Tracking Framework</h1>
+
+    <p class="lead">
+        Monitor employee changes, audit logs, version history and traceability.
+    </p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body text-center">
+
+                <h5>Total Employees</h5>
+
+                <h1>{{ employee_count }}</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body text-center">
+
+                <h5>Total Audit Logs</h5>
+
+                <h1>{{ audit_count }}</h1>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="mt-4">
+
+    <a href="/employees-ui"
+       class="btn btn-primary">
+       Manage Employees
+    </a>
+
+    <a href="/audit-ui"
+       class="btn btn-success">
+       View Audit Logs
+    </a>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
